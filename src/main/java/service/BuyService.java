@@ -19,7 +19,7 @@ public class BuyService {
     @Autowired
     private CustomerDao customerDao;
 
-    @Transaction
+    @Transaction(allowNoneffectiveUpdate = false)
     public void buy(Integer buyerId, Integer bookId, Integer number) {
 
         Integer bookPrice = bookShopDao.getBookPrice(bookId);
