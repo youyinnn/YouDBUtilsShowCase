@@ -39,10 +39,10 @@ public class BookShopDao extends YouDao<BookShop> {
 
     public ArrayList<BookShop> getBook(HashMap<String, Object> conditionsMap) {
 
-        return modelHandler.getListWhereLikeAndLike(conditionsMap,null);
+        return modelHandler.getListWhereLike(conditionsMap,null,"and");
     }
 
     public Integer getBookPrice(Integer bookId) {
-        return (Integer) modelHandler.getModelFieldValue("price",YouCollectionsUtils.getYouHashMap("bookId",bookId));
+        return (Integer) modelHandler.getModelFieldValue("price",YouCollectionsUtils.getYouHashMap("bookId",bookId),"and");
     }
 }
