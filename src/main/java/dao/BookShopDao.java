@@ -37,7 +37,7 @@ public class BookShopDao extends YouDao<BookShop> {
         return subtraction;
     }
 
-    public ArrayList<BookShop> getBook(HashMap<String, Object> conditionsMap) {
+    public ArrayList<BookShop> getBookWhereLike(HashMap<String, Object> conditionsMap) {
 
         return modelHandler.getListWhereLike(conditionsMap,null,"and");
     }

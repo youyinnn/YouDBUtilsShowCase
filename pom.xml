@@ -48,10 +48,11 @@
         </dependency>
 
         <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-webapp</artifactId>
-            <version>RELEASE</version>
+            <groupId>com.github.youyinnn</groupId>
+            <artifactId>you-quick-jetty</artifactId>
+            <version>1.0.5.1</version>
         </dependency>
+
     </dependencies>
 
 
